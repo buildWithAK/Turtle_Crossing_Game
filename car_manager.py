@@ -28,7 +28,7 @@ class CarManager:
         self.car_speed = STARTING_MOVE_DISTANCE
 
     def create_car(self):
-        random_chance = random.randint(1, 6)
+        random_chance = random.randint(1, 4)  # Adjust the range to control car creation frequency
 
         if random_chance == 1:
             random_y = random.randint(-240, 240)
